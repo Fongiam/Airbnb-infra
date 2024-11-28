@@ -2,6 +2,7 @@ def COLOR_MAP = [
     'SUCCESS': 'good',
     'FAILURE': 'danger',
     ]
+
 pipeline {
     agent any
     
@@ -47,8 +48,6 @@ pipeline {
                 sh 'terraform apply --auto-approve'
             }
         }         
-        
-        
     }
     
     post { 
@@ -59,4 +58,6 @@ pipeline {
     }
 }        
     
+        
+
     
